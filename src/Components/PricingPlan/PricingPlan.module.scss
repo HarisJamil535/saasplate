@@ -1,0 +1,201 @@
+@import "../../assets//Styles/Variables.scss";
+.wrapper {
+  padding: 60px 165px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: $xl) {
+    padding: 60px 120px;
+  }
+  @media (max-width: $lg) {
+    padding: 60px 100px;
+  }
+  @media (max-width: $sm) {
+    padding: 60px 90px;
+  }
+  @media (max-width: $sm) {
+    padding: 60px 50px;
+  }
+
+  .headingandpara {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    h1 {
+      font-size: 44px;
+      line-height: 52px;
+      font-weight: 600;
+      color: #ff543e;
+      @media (max-width: $md) {
+       font-size: 24px;
+       line-height: 36px;
+      }
+      @media (max-width: $sm) {
+        font-size: 20px;
+        line-height: 30px;
+       }
+    }
+    p {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 500;
+      color: #8e8e8e;
+      text-align: center;
+      @media (max-width: $md) {
+        font-size: 16px;
+        line-height: 24px;
+       }
+       @media (max-width: $sm) {
+        font-size: 14px;
+        line-height: 21px;
+       }
+    }
+  }
+  .container {
+    width: 100%;
+
+    .mySwiper {
+      height: 600px;
+      padding: 1rem 1rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      @media (max-width: $md) {
+        height: 500px;
+      }
+
+      .slide1,
+      .slide2,
+      .slide3 {
+        background-color: #ffffff;
+        box-shadow: 0px 0px 18px 0px #00000029;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-radius: 10px;
+        padding: 0 0.5rem;
+        @media (max-width: $md) {
+          padding: 0 0.4rem;
+        }
+        @media (max-width: $sm) {
+          padding: 0 0.3rem;
+        }
+
+        .rectangle {
+          width: 100%;
+          height: 20px;
+          background-color: #fe6a24;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 5px 5px 0 0;
+          border: 1px solid rgb(255, 255, 255);
+          padding: 0 14px;
+        }
+        img {
+          margin: 0 auto;
+          margin-top: 60px;
+          height: 50px;
+          width: 60px;
+          @media (max-width: $md) {
+            height: 40px;
+            width: 50px;
+          }
+          @media (max-width: $sm) {
+            height: 24px;
+            width: 40px;
+          }
+        }
+        .headingandpara {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 14px;
+          margin-top: 14px;
+          h4 {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 500;
+            text-align: center;
+            @media (max-width: $md) {
+              font-size: 16px;
+              line-height: 32px;
+            }
+          }
+          p {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            @media (max-width: $md) {
+              font-size: 12px;
+              line-height: 18px;
+            }
+          }
+        }
+        .price {
+          font-size: 32px;
+          line-height: 52px;
+          font-weight: 600;
+          margin: 0 auto;
+          @media (max-width: $md) {
+            font-size: 20px;
+            line-height: 3px;
+          }
+          span {
+            font-size: 16px;
+            line-height: 52px;
+            font-weight: 600;
+            @media (max-width: $md) {
+              font-size: 14px;
+              line-height: 21px;
+            }
+          }
+        }
+        button {
+          height: 45px;
+          width: 60%;
+          margin: 0 auto;
+          margin-top: 18px;
+          padding: 8px 16px;
+          border: none;
+          border-radius: 4px;
+          color: white;
+          @media (max-width: $md) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+        .btmcontent {
+          margin: 0 auto;
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          margin-top: 26px;
+
+          img {
+            margin: 0 auto;
+            height: 50px;
+            width: 50px;
+            @media (max-width: $md) {
+              height: 28px;
+              width: 32px;
+            }
+          }
+          p {
+            text-align: center;
+            font-size: 14px;
+            line-height: 21px;
+            color: #8e8e8e;
+            @media (max-width: $md) {
+             font-size: 12px;
+              }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import '../../assets//Styles/Variables.scss';
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    h1{
+        font-size: 44px;
+        line-height: 52px;
+        font-weight: 600;
+        text-align: center;
+        @media(max-width:$md){
+            font-size: 24px;
+            line-height: 36px;
+        }
+        @media(max-width:$md){
+            font-size: 20px;
+            line-height: 30px;
+        }
+        
+    }
+    .gallery{
+        
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+        -webkit-column-width: 25%;
+        -moz-column-width: 25%;
+        column-width: 25%;
+        padding: 0 3rem;
+        @media(max-width:$md){
+            column-count: 3; 
+        }
+        @media(max-width:$md){
+            column-count: 2; 
+            
+        }
+        .pics{
+            margin-bottom: 1.5rem;
+            max-height:600px ;
+        }
+    }
+
+}
+.gallery{
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-width: 25%;
+    -moz-column-width: 25%;
+    column-width: 25%;
+    padding: 0 3rem;
+    @media(max-width:$md){
+        column-count: 3; 
+    }
+    @media(max-width:$md){
+        column-count: 2; 
+        
+    }
+    .pics{
+        margin-bottom: 1.5rem;
+    }
+}

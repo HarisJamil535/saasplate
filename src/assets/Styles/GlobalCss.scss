@@ -1,0 +1,28 @@
+//---------------------------Flex Properties----------------------------
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flexSapaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .flexSapaceEvenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .flexSapaceAround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .flexAlignCenter {
+    display: flex;
+    align-items: center;
+  }
+  

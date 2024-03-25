@@ -1,0 +1,347 @@
+@import "../../assets/Styles/Variables.scss";
+
+.wrapper {
+    width: 100%;
+    background-color: #1d1d1d;
+    padding: 4rem 16%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    @media (max-width: $lg) {
+        padding: 4rem 8%;
+    }
+
+    @media (max-width: $md) {
+        padding: 4rem 6%;
+    }
+
+    h1 {
+        font-size: 44px;
+        line-height: 52px;
+        font-weight: 600;
+        color: white;
+        border-bottom: 3px solid $orange;
+
+        @media (max-width: $lg) {
+            font-size: 38px;
+        }
+
+        @media (max-width: $md) {
+            font-size: 24px;
+        }
+    }
+
+    .container {
+        height: inherit;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .row1 {
+            width: 100%;
+            display: flex;
+            position: relative;
+            @media (max-width: $sm) {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+
+            .left {
+                flex: 1;
+                height: inherit;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 5%;
+                padding-right: 1rem;
+
+                @media (max-width: $lg) {
+                    padding-right: 0;
+                    justify-content: space-evenly;
+                    font-size: 16px;
+                }
+
+                @media (max-width: $sm) {
+                    flex-direction: column;
+                    gap: 0.8rem;
+                }
+
+                span {
+                    color: $orange;
+                    font-size: 96px;
+
+                    @media (max-width: $lg) {
+                        font-size: 72px;
+                    }
+
+                    @media (max-width: $md) {
+                        font-size: 24px;
+                    }
+                }
+
+                .text {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: 500;
+                    color: white;
+
+                    @media (max-width: $md) {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .right {
+                flex: 1;
+                height: inherit;
+                size: 10px;
+                line-height: 18px;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                color: #f0f0f0;
+                padding-left: 1rem;
+
+                @media (max-width: $lg) {
+                    font-size: 12px;
+                }
+
+                @media (max-width: $sm) {
+                    text-align: center;
+                }
+            }
+
+            .center {
+                flex: 0.5;
+                height: inherit;
+                min-width: 130px;
+                display: flex;
+                flex-direction: center;
+                align-items: center;
+
+                img {
+                    height: 138px;
+                    width: 138px;
+                    border-radius: 50%;
+                    border: 1px solid $orange;
+                    object-fit: cover;
+                    margin: 0 auto;
+
+                    @media (max-width: $md) {
+                        height: 90px;
+                        width: 90px;
+                    }
+                }
+            }
+        }
+
+        .row2 {
+            width: 100%;
+            display: flex;
+            position: relative;
+
+            @media (max-width: $sm) {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+
+            .left {
+                flex: 1;
+                height: inherit;
+                size: 10px;
+                line-height: 18px;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                color: #f0f0f0;
+                padding-right: 1rem;
+
+                @media (max-width: $lg) {
+                    font-size: 12px;
+                }
+
+                @media (max-width: $sm) {
+                    order: 3;
+                    text-align: center;
+                }
+            }
+
+            .center {
+                flex: 0.5;
+                height: inherit;
+                min-width: 130px;
+                display: flex;
+                flex-direction: center;
+                align-items: center;
+
+                @media (max-width: $sm) {
+                    order: 2;
+                    text-align: center;
+                }
+
+                img {
+                    height: 138px;
+                    width: 138px;
+                    border-radius: 50%;
+                    border: 1px solid $orange;
+                    object-fit: cover;
+                    margin: 0 auto;
+
+                    @media (max-width: $md) {
+                        height: 90px;
+                        width: 90px;
+                    }
+                }
+            }
+
+            .right {
+                flex: 1;
+                height: inherit;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 5%;
+                padding-left: 1rem;
+
+                @media (max-width: $lg) {
+                    padding-right: 0;
+                    justify-content: space-evenly;
+                    font-size: 16px;
+                }
+
+                @media (max-width: $sm) {
+                    flex-direction: column;
+                    gap: 0.8rem;
+                    order: 1;
+                }
+
+                span {
+                    color: $orange;
+                    font-size: 96px;
+
+                    @media (max-width: $lg) {
+                        font-size: 72px;
+                    }
+
+                    @media (max-width: $md) {
+                        font-size: 24px;
+                    }
+                }
+
+                .text {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: 500;
+                    color: white;
+
+                    @media (max-width: $md) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .row3 {
+            width: 100%;
+            display: flex;
+            position: relative;
+
+            @media (max-width: $sm) {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+
+            .left {
+                flex: 1;
+                height: inherit;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 5%;
+                padding-right: 1.5rem;
+
+                @media (max-width: $lg) {
+                    padding-right: 0;
+                    justify-content: space-evenly;
+                    font-size: 16px;
+                }
+
+                @media (max-width: $sm) {
+                    flex-direction: column;
+                    gap: 0.8rem;
+                }
+
+                span {
+                    color: $orange;
+                    font-size: 96px;
+
+                    @media (max-width: $lg) {
+                        font-size: 72px;
+                    }
+
+                    @media (max-width: $md) {
+                        font-size: 24px;
+                    }
+                }
+
+                .text {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: 500;
+                    color: white;
+
+                    @media (max-width: $md) {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .right {
+                flex: 1;
+                height: inherit;
+                size: 10px;
+                line-height: 18px;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                color: #f0f0f0;
+                padding-left: 1rem;
+
+                @media (max-width: $lg) {
+                    font-size: 12px;
+                }
+
+                @media (max-width: $sm) {
+                    text-align: center;
+                }
+            }
+
+            .center {
+                flex: 0.5;
+                height: inherit;
+                min-width: 130px;
+                display: flex;
+                flex-direction: center;
+                align-items: center;
+
+                img {
+                    height: 138px;
+                    width: 138px;
+                    border-radius: 50%;
+                    border: 1px solid $orange;
+                    object-fit: cover;
+                    margin: 0 auto;
+
+                    @media (max-width: $md) {
+                        height: 90px;
+                        width: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
